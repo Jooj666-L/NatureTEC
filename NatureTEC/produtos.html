@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos NatureTEC - Suplementos e Bem-estar</title>
+    <meta name="description" content="Conheça os produtos NatureTEC: suplementos, alimentos e soluções naturais com tecnologia de ponta. Qualidade e sustentabilidade para sua saúde.">
+    <meta name="keywords" content="Produtos naturais, Suplementos, Saúde, Whey Protein, NatureTEC, Produtos sustentáveis">
+    <meta name="author" content="NatureTEC">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <h1>NatureTEC</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="carrinho.html">Carrinho (<span id="carrinho-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Produtos -->
+    <section id="produtos" class="produtos">        
+        <h2>Produtos em Destaque</h2>
+        <div class="produto">
+            <img src="N.A.T Protein.jpg" alt="Whey Protein" loading="lazy">
+            <h3>N.A.T Protein</h3>
+            <p>Whey Protein de alta qualidade, ideal para quem busca ganho de massa muscular, recuperação rápida e nutrição eficiente no dia a dia. Rápida absorção, sabor delicioso e resultados reais.</p>
+            <button class="ver-mais">Ver mais</button>
+            <p>R$ 110,00</p>
+            <button>Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <img src="produto2.jpg" alt="Produto 2" loading="lazy">
+            <h3>Produto 2</h3>
+            <p>Descrição do produto 2.</p>
+            <p>R$ 129,99</p>
+            <button>Adicionar ao Carrinho</button>
+        </div>       
+        <!-- Adicione mais produtos conforme necessário -->
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 NatureTEC | Todos os direitos reservados</p>
+        <div class="social">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <!-- Alerta de Adição ao Carrinho -->
+    <div id="alerta" style="display: none; align-items: center; justify-content: center; background-color: #4CAF50; color: white; padding: 10px; position: fixed; top: 10px; left: 50%; transform: translateX(-50%); border-radius: 5px;">
+        <span id="alerta-icone" style="margin-right: 8px;"></span>
+        <span id="alerta-texto"></span>
+    </div>
+
+    <!-- Modal do Produto -->
+    <div id="modal-produto" class="modal" style="display: none;">
+        <div class="modal-conteudo">
+            <span id="fechar-modal" class="fechar">&times;</span>
+            <img id="modal-imagem" src="" alt="" />
+            <h3 id="modal-nome"></h3>
+            <p id="modal-descricao"></p>
+            <p id="modal-preco"></p>
+            
+            <!-- Campo para selecionar a quantidade -->
+            <label for="quantidade-produto">Quantidade:</label>
+            <input type="number" id="quantidade-produto" value="1" min="1" />
+            
+            <button id="botao-adicionar-carrinho">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+
+    <!-- Incluindo o JavaScript -->
+    <script src="scripts.js"></script>
+
+</body>
+</html>

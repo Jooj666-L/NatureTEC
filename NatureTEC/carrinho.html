@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras - NatureTEC</title>
+    <meta name="description" content="Veja os produtos que você adicionou ao carrinho. Finalize sua compra e aproveite o melhor da natureza com tecnologia.">
+    <meta name="keywords" content="Carrinho de compras, Finalizar pedido, Produtos NatureTEC, Suplementos, Checkout">
+    <meta name="author" content="NatureTEC">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <h1>NatureTEC</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="carrinho.html">Carrinho (<span id="carrinho-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Carrinho -->
+    <section class="carrinho">
+        <h2>Seu Carrinho</h2>
+        <div id="lista-carrinho">
+            <p>Você ainda não adicionou produtos ao carrinho.</p>
+        </div>
+        <button onclick="finalizarCompra()">Finalizar Compra</button>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 NatureTEC | Todos os direitos reservados</p>
+        <div class="social">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+
+    <div id="alerta" class="alerta" style="display: none;">
+        <span id="alerta-texto"></span>
+    </div>      
+</body>
+</html>
